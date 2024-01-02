@@ -1,32 +1,23 @@
-ul {
-    background-color:pink;
-    display: flex;
-    justify-content: space-evenly;
-    f
+div {
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
 }
 
-a {
-    text-decoration:none;
-    color:black;   
+@media (width:600px) {
+    div {
+        background-color: red;
+    }
 }
 
-li {
-    list-style-type: none;
-    display: inline;
+@media (max-width:600px) {
+    div {
+        background-color: pink;
+    }
 }
 
-.outer {
-    height:400px;
-    width: 400px;
-    background-color:crimson;
-    display : flex;
-    justify-content:center;
-    align-items: center;
-}
-
-.inner {
-    height:100px;
-    width: 100px;
-    background-color:rgb(231, 111, 129);
-    align-self: flex-start;
+@media (min-width:200px) and (max-width:300px) {
+    div {
+        background-color: aqua;
+    }
 }
